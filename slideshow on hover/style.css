@@ -1,0 +1,70 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: 'Inter UI', sans-serif;
+}
+ ul {
+	 margin: 0;
+	 padding: 0;
+	 list-style-type: none;
+}
+ .slider {
+	 position: fixed;
+	 top: 10%;
+	 right: 15%;
+	 width: 240px;
+}
+ .slider-wrapper {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 width: 350px;
+	 height: 100%;
+	 transition-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+	 transition-duration: 300ms;
+	 transform: translateZ(0);
+}
+ .slide {
+	 position: absolute;
+	 top: 0;
+	 width: 100%;
+	 height: 250px;
+	 margin-bottom: 2rem;
+	 transition-timing-function: ease-in-out;
+	 transition: background 500ms;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 font-size: 2rem;
+	 color: white;
+	 background: black;
+}
+ .slide.active {
+	 background: #bbb;
+}
+ .slider-nav {
+	 position: absolute;
+	 top: 15%;
+	 left: 15%;
+	 display: flex;
+	 flex-direction: column;
+}
+ .slider-nav > li {
+	 margin-bottom: 2rem;
+	 cursor: pointer;
+	 color: #5e5e5e;
+	 transition-duration: 250ms;
+	 background-color: transparent;
+}
+ .slider-nav > li h2 {
+	 margin: 0;
+	 font-weight: 500;
+	 font-size: 3rem;
+	 line-height: 120%;
+}
+ .slider-nav > li:hover, .slider-nav > li.active {
+	 color: #2b2b2b;
+}
+ 
